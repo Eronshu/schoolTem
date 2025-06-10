@@ -1,0 +1,108 @@
+/* 继承主CSS变量 */
+:root {
+    --primary-color: #2A4365;
+    --secondary-color: #C6A769;
+    --accent-color: #4A5568;
+    --light-bg: #F7FAFC;
+}
+
+/* 内容卡片 */
+.content-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 标题样式 */
+.section-title {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+
+/* 列表样式 */
+.styled-list {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.styled-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.styled-list li::before {
+    content: "🎵";
+    position: absolute;
+    left: 0;
+}
+
+/* 要求区块 */
+.requirement-block {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.requirement-block h4 {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.requirement-block h4 i {
+    margin-right: 0.5rem;
+    color: var(--secondary-color);
+}
+
+/* 提示框 */
+.note-box {
+    background: #e3f2fd;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+    color: var(--primary-color);
+}
+
+.note-box i {
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .content-card {
+        padding: 1.5rem;
+    }
+
+    .requirement-block {
+        padding: 1rem;
+    }
+
+    .styled-list li {
+        padding-left: 1.5rem;
+    }
+}

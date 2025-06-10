@@ -1,0 +1,26 @@
+{
+  "name": "try",
+  "version": "1.0.2",
+  "description": "nothing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "keywords": [],
+  "author": "cyan",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "node-sass": "^7.0.1",
+    "uuid": "^8.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nothing"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "sass-loader": "^12.6.0"
+  }
+}

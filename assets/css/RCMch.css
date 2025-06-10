@@ -1,0 +1,209 @@
+/* RCMch.css */
+/* 继承主CSS变量 */
+:root {
+    --primary-color: #2A4365;
+    --secondary-color: #C6A769;
+    --accent-color: #4A5568;
+    --light-bg: #F7FAFC;
+}
+
+/* ========== 统一标题系统 ========== */
+.page-title {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.page-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--secondary-color);
+}
+
+.sub-title {
+    font-size: 24px;
+    margin: 2rem 0 1.5rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.sub-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 4px;
+    background: var(--secondary-color);
+    border-radius: 2px;
+}
+
+/* ========== 卡片样式增强 ========== */
+.content-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border-left: 4px solid var(--secondary-color);
+}
+
+/* ========== 列表系统 ========== */
+.styled-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.styled-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.styled-list i {
+    color: var(--secondary-color);
+    min-width: 25px;
+    text-align: center;
+}
+
+/* ========== 特殊区块 ========== */
+.info-box {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.highlight-text {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+/* ========== 表格优化 ========== */
+.comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.5rem 0;
+}
+
+.comparison-table th {
+    background: linear-gradient(135deg, var(--primary-color), #1A365D);
+    color: white;
+    padding: 1.2rem!important;
+    font-weight: 600;
+}
+
+.comparison-table td {
+    padding: 1.2rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.comparison-table tr:nth-child(even) {
+    background: var(--light-bg);
+}
+
+/* ========== 响应式调整 ========== */
+@media (max-width: 768px) {
+    .content-card {
+        padding: 1.5rem;
+    }
+
+    .sub-title {
+        font-size: 20px;
+        padding-left: 1.5rem;
+    }
+
+    .styled-list li {
+        font-size: 15px;
+        gap: 0.8rem;
+    }
+}
+/* 新增 Logo 样式 */
+.rcm-logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+/* 统一列表样式 */
+/* 统一列表样式 */
+.styled-list {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.styled-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 2rem;
+}
+
+
+
+/* 信息框样式 */
+.info-box {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.info-box p {
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    color: var(--accent-color);
+}
+
+/* 标题装饰线 */
+.sub-title {
+    font-size: 24px;
+    margin: 2rem 0 1.5rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.sub-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 4px;
+    background: var(--secondary-color);
+    border-radius: 2px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .rcm-logo {
+        max-width: 150px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+        padding-left: 1.5rem;
+    }
+
+    .styled-list li {
+        font-size: 15px;
+        gap: 0.8rem;
+    }
+}

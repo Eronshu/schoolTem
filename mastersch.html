@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCEC 大师介绍</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.purified.css">
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <style>
+        .masters-section {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+        .master-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            /* 去掉 text-align: left; 可以让内部的布局由我们自己控制 */
+        }
+        .master-card h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+            /* 去掉 text-align: center; 若需要左对齐，可不写任何 text-align */
+        }
+        .master-card ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        .master-card p, .master-card li {
+            font-size: 18px;
+            color: #444;
+            line-height: 1.6;
+        }
+        /* 自定义图片样式：去掉 margin: 0 auto; 改用 width/height 控制大小 */
+        .rounded-square {
+            width: 150px;       /* 根据需要调整宽度 */
+            height: 150px;      /* 根据需要调整高度 */
+            object-fit: cover;  /* 保持图片比例并裁剪填充 */
+            border-radius: 15px;/* 圆角程度可自行调整 */
+        }
+    </style>
+</head>
+<body>
+<div id="header"></div>
+<!-- Start Breadcrumbs -->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                <ul class="breadcrumb-nav">
+                    <li><a href="indexch.html">主页</a></li>
+                    <li> 我们的大师</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumbs -->
+
+<section class="masters-section container">
+    <h2 class="text-center mb-5">TCEC 大师介绍</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="master-card">
+                <h3>世界级小提琴家</h3>
+                <!-- 重点：用 d-flex + align-items-start + me-3 等实现图片左、文字右 -->
+                <div class="d-flex align-items-start">
+                    <img src="assets/images/masters/violin1.png"
+                         alt="世界级小提琴家"
+                         class="rounded-square me-3">
+                    <ul>
+                        <li>美国茱莉亚音乐学院博士，乐团首席小提琴，CBC 电台常驻独奏音乐家，演出遍布全世界，小提琴作品录制了多张唱片</li>
+                        <li>作曲家，艺术家，两家弦乐团的主要创建者，成就获得高度评价</li>
+                        <li>其传授给学生的不仅是演奏技艺，更带领学生探索理解音乐内涵</li>
+                        <li>演奏风格细腻动人，教学经验丰富，培养众多杰出音乐家</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="master-card">
+                <h3>首席大提琴家</h3>
+                <div class="d-flex align-items-start">
+                    <img src="assets/images/masters/violin2.png"
+                         alt="首席大提琴家"
+                         class="rounded-square me-3">
+                    <ul>
+                        <li>加拿大乐团的首席大提琴，演出专场遍及欧洲、北美及韩 国，灌录了大提琴独奏，及与其他乐器协奏的唱片</li>
+                        <li>CBC 加拿大国家电台音乐家，美国音乐家联合会和美国弦乐 教师协会成员</li>
+                        <li>皇家音乐学院任教三十余年，在欧洲及加拿大开设大师班</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="master-card">
+                <h3>钢琴家 & 教育家</h3>
+                <div class="d-flex align-items-start">
+                    <img src="assets/images/masters/piano3.png"
+                         alt="钢琴家 & 教育家"
+                         class="rounded-square me-3">
+                    <ul>
+                        <li>钢琴家，演出足迹遍布于世界各地，载誉无数</li>
+                        <li>教育家，曾任教麦吉尔大学、海福格尔学院</li>
+                        <li>启发性教学，风格生动，特别在即兴演奏，重奏，协奏方面造诣深厚</li>
+                        <li>指导的多名学生在各大音乐比赛中表现优异，Crescendo International Competition 组委会授予优秀导师称号</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="master-card">
+                <h3>作曲家 & 艺术家</h3>
+                <div class="d-flex align-items-start">
+                    <img src="assets/images/masters/book4.png"
+                         alt="作曲家 & 艺术家"
+                         class="rounded-square me-3">
+                    <ul>
+                        <li>RCM皇家音乐学院 音乐理论教材的编纂者，RCM 考试委员会成员、考官</li>
+                        <li>加拿大音乐教师培训专家</li>
+                        <li>多所北美音乐学院客座教授</li>
+                        <li>指导学生探索音乐创作的深层次内涵</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="master-card">
+                <h3>音乐学院长笛教授</h3>
+                <div class="d-flex align-items-start">
+                    <img src="assets/images/masters/flute5.png"
+                         alt="音乐学院教授"
+                         class="rounded-square me-3">
+                    <ul>
+                        <li>曾任教于 UBC 不列颠哥伦比亚大学、NYU 纽约大学音乐学 院、麦克马斯特音乐学院，各音乐学院客座教授，20 多年教 龄</li>
+                        <li>Caledon Music Festival 艺术总监，参与评审加拿大各地的音 乐节</li>
+                        <li>世界各地巡演，欧美和亚洲;多伦多室内乐团，交响乐团的成 员;与众多作曲家紧密合作，并首演了多部世界级作品</li>
+                        <li>善于发掘学生潜力，提升创造力</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="footer"></div>
+<!-- ========================= JS here ========================= -->
+<script src="assets/js/load-components.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
